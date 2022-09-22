@@ -1,0 +1,269 @@
+
+:root{
+    --fonte-principal: 'Inter';
+    --cor-back:#FFFFFF ;
+    --cor-titulo: #101828;
+    --cor-paragrafo: #667085;
+    --cor-destaque: #8E2424;
+    --cor-nome-empresa: #3A404E;
+    --cor-rodape:#98A2B3;
+    --cor-cadastro: #ffffff;
+    --cor-borda: #EAECF0;
+    --cor-back-colab: rgba(196, 25, 25, 0.03);
+    --cor-rodape-back: #F9FAFB;
+}
+
+body{
+    background-color: var(--cor-back);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 8em;
+}
+
+.container__nav-logo{
+    display: flex;
+    align-items: center;
+}
+.container__nav-titulo{
+    margin: 0 0.5em;
+    font-size: 18px;
+    font-weight: 500;
+}
+.container__nav-opcoes{
+    margin: 0 auto 0 5em;
+    
+}
+
+.container__nav-lista{
+    display: flex;
+    
+}
+
+.container__nav-link{
+    margin:0 1em;
+    text-decoration: none;
+    color: var(--cor-paragrafo);
+    font-weight: 500;
+}
+
+.container__nav-link:hover{
+    color: var(--cor-destaque);
+}
+
+.container__nav-link-cadastro{
+    background-color: var(--cor-destaque);
+    padding: 0.5em;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    color: var(--cor-cadastro);
+}
+
+.cabecalho{
+    padding-top: 3em;
+    margin: 7em 5em;
+}
+
+.container__cabecalho-banner, .container__vagas-descricao{
+    display: grid;
+    justify-content: center;
+    gap: 32px;
+}
+.container__cabecalho-span{
+    justify-self: center;
+    font-weight: 600;
+    color: var(--cor-destaque);
+}
+
+.container__cabecalho-titulo{
+    justify-self: center;
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--cor-titulo);
+}
+
+.container__cabecalho-texto{
+    justify-self: center;
+    text-align: center;
+    width: 55%;
+    font-size: 20px;
+    color: var(--cor-paragrafo);
+}
+
+.container__cabecalho-lista{
+    display: flex;
+    padding: 5em;
+}
+
+.container__cabecalho-item{
+    width: 25%;
+}
+
+.container__cabecalho-item-titulo{
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--cor-destaque);
+}
+
+.container__cabecalho-item-subtitulo{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-titulo);
+    margin: 0.8em 0;
+}
+
+.container__cabecalho-item-texto{
+    color: var(--cor-paragrafo);
+    width: 80%;
+}
+
+.container__vagas-span{
+    justify-self: center;
+    font-weight: 600;
+    color: var(--cor-destaque);
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    padding: 4px 12px;
+}
+
+.container__vagas-titulo{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cor-titulo);
+}
+
+.container__vagas-texto{
+    font-size: 20px;
+    color: var(--cor-paragrafo);
+    text-align: center;
+}
+
+.container__vagas-foto{
+    text-align: center;
+}
+
+.container-foto{
+    width: 90%;
+    margin:2.5em auto;
+}
+
+.container__vagas-contratos{
+    display: flex;
+    flex-direction: column;
+    padding-left:20%;
+    gap: 4em;
+}
+
+.container__vagas-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 75vw;
+}
+
+.container__lista-titulo{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container__vagas-card{
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    padding: 1.5em;
+    width: 75%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5em;
+
+}
+
+.container__card-titulo{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-titulo);
+    grid-column: span 2;
+}
+
+.container__card-texto{
+    font-weight: 500;
+    color: var(--cor-paragrafo);
+}
+
+.container__depoimento{
+    text-align: center;
+    margin: 5em auto;
+    padding: 3em;
+    background-color: var(--cor-back-colab);
+    width: 80%;
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+}
+
+.container__depoimento-span{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-destaque);
+}
+
+.container__depoimento-titulo{
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--cor-titulo);
+}
+
+.container__depoimento-nome{
+    font-weight: 500;
+    color: var(--cor-titulo);
+}
+
+.container__depoimento-cargo{
+    font-size: 14px;
+    color: var(--cor-paragrafo);
+}
+
+.container__rodape{
+    background-color: var(--cor-rodape-back);
+    text-align: center;
+    padding: 3em;
+}
+
+.container__rodape-titulo{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cor-titulo);
+}
+
+.container__rodape-texto{
+    font-size: 20px;
+    color: var(--cor-paragrafo);
+    margin: 1em;
+}
+
+.container__rodape-email{
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 12px 14px 12px 16px;
+}
+
+.container__rodape-cadastro{
+    font-weight: 500;
+    color: var(--cor-cadastro);
+    background-color: var(--cor-destaque);
+    padding: 12px 20px;
+    border: 1px solid #8E2424;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+
+.container__rodape-direitos{
+    color: var(--cor-rodape);
+    margin-top: 2em;
+}
